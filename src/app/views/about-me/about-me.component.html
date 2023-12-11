@@ -1,0 +1,30 @@
+<div class="about-me-container">
+  <div class="about-me-info-container">
+    <h1>Hi there!</h1>
+    <h2>My name is Rodrigo</h2>
+
+    <ngx-typed-js
+      [strings]="[
+        'software developer',
+        'full-stack developer',
+        'Enthusiastic web developert'
+      ]"
+      [loop]="true"
+      [typeSpeed]="125"
+      [backSpeed]="75"
+      [showCursor]="true"
+    >
+      <h2 class="slogan-info">I am</h2>
+      <h2 class="typing"></h2>
+    </ngx-typed-js>
+    <p class="about-me-description">
+      I'm a curious and proactive individual, always eager to learn and grow. I
+      enjoy taking on challenges and pushing my limits to find efficient
+      solutions. I'm passionate about staying updated on industry trends and
+      exploring new technologies. My drive for improvement and innovation keeps
+      me engaged, making every opportunity a chance to learn and evolve.
+    </p>
+    <a  href="https://drive.google.com/drive/folders/1-ROdmjg1ZLr_CzHLiC0d97U5dUqlN-FJ"  target="_blank" class="about-me-btn-resume">My Resume</a>
+  </div>
+    <img  [src]= "isLightTheme ? 'assets/img/about-me-light.png' :'assets/img/about-me-dark.png' "alt="about-me-image" />
+</div>

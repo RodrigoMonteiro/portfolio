@@ -1,0 +1,63 @@
+.about-me-container {
+  display: flex;
+  position: absolute;
+  height: 85%;
+  top: 15%;
+  padding: 25px;
+  .about-me-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .slogan-info,
+    .typing {
+      display: inline-block;
+      padding: 5px;
+    }
+    .typing {
+      position: relative;
+      color: var(--background-secondary);
+    }
+    .about-me-description {
+      position: relative;
+      top: 5vh;
+      width: 80%;
+      text-align: justify;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: var(--font-color);
+    }
+
+    .about-me-btn-resume {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 15%;
+      color: var(--font-color);
+      text-decoration: none;
+      right: -32.5%;
+      width: 20%;
+      height: 8%;
+      border: 1px solid var(--background-secondary);
+      border-radius: 5px;
+      transition:
+        transform 0.4s,
+        opacity 0.4s,
+        background-color 0.4s;
+      background: var(--background-primary);
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  img{
+    position: absolute;
+    margin: auto;
+    width: auto;
+    right: 15%;
+    height: 80%;
+    top: -2%;
+  }
+}
