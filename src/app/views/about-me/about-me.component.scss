@@ -1,10 +1,10 @@
 .about-me-container {
   display: flex;
-  position: absolute;
+  position: relative;
   height: 85%;
-  top: 15%;
   padding: 25px;
   .about-me-info-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -32,12 +32,12 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      top: 15%;
+      top: 20%;
       color: var(--font-color);
       text-decoration: none;
-      right: -32.5%;
+      right: -30%;
       width: 20%;
-      height: 8%;
+      height: 40px;
       border: 1px solid var(--background-secondary);
       border-radius: 5px;
       transition:
@@ -55,11 +55,9 @@
   }
   img{
     position: absolute;
-    margin: auto;
-    width: auto;
-    right: 15%;
+    top:auto;
+    left: 55%;
     height: 80%;
-    top: -2%;
   }
 }
 

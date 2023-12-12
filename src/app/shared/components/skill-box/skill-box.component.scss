@@ -1,0 +1,12 @@
+.skill-box-container{
+  padding: 5px;
+  position: relative;
+  height: 100%;
+  border: 2px solid var(--background-primary);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  h2{
+    text-align: center;
+  }
+}

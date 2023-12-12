@@ -1,6 +1,11 @@
 .skills-container {
-  position: absolute;
+  position: relative;
+  display: flex;
   height: 85%;
-  top: 15%;
-  padding: 25px;
+  justify-content: space-around;
+  align-items: center;
+  .skill-box{
+    width: 20%;
+    height: 80%;
+  }
 }
