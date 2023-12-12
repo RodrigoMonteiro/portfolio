@@ -1,8 +1,9 @@
 <div class="skill-box-container">
-  <h2>{{skill.title}}</h2>
- <div class="list-skills-container">
-   <ul>
-    <li *ngFor="let skill of skill.skills">{{skill.name}}</li>
+  <h3>{{ skill.title }}</h3>
+  <ul class="list-skills-container">
+    <li class="list-skill-item" *ngFor="let skill of skill.skills">
+      <img src="{{ skill.icon }}" alt="{{ skill.name }}" class="skill-icon">
+      <p>{{ skill.name }}</p>
+    </li>
   </ul>
- </div>
 </div>

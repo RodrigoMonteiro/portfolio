@@ -1,10 +1,11 @@
 .skills-container {
+  height: 85%;
+  top: 5%;
   position: relative;
   display: flex;
-  height: 85%;
+
   justify-content: space-around;
-  align-items: center;
-  .skill-box{
+  .skill-box {
     width: 20%;
     height: 80%;
   }

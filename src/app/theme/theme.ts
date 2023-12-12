@@ -9,7 +9,7 @@ export const light: Theme = {
     '--main-background': '#FFFFFF',
     '--background-primary': '#7DA0CA',
     '--background-secondary': '#001F3F',
-    '--background-extra': '#FF0000',
+    '--background-contrast': '#E0E0E0',
     '--font-color': '#000000',
   },
 };
@@ -20,7 +20,7 @@ export const dark: Theme = {
     '--main-background': '#000000',
     '--background-primary': '#052659',
     '--background-secondary': '#7FB8E5',
-    '--background-extra': '#CC0000',
+    '--background-contrast': '#777777',
     '--font-color': '#F5F3F4',
   },
 };
