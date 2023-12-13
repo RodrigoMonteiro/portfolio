@@ -1,0 +1,51 @@
+.project-box-container {
+  display: flex;
+  position: relative;
+  background-color: royalblue;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+  .project-general-info {
+    height: 100%;
+    width: 60%;
+    padding: 5px;
+    text-align: center;
+
+
+     img{
+      width: 100%;
+      height: auto; //  or auto (?)
+      border-radius: 5px;
+
+     }
+     h3{
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+
+  }
+
+  .project-details-info {
+    height: 100%;
+    width: 40%;
+    // background-color: yellowgreen;
+    padding: 5px;
+
+     &::before{
+    content: "";
+    position: absolute;
+    left:60%;
+    top:2.5%;
+    height: 95%;
+    width: 1px;
+    background-color: var(--background-primary);
+  }
+  }
+}
