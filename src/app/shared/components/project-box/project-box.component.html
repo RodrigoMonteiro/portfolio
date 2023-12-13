@@ -1,9 +1,13 @@
-<div class="project-box-container">
+<div class="project-box-container" (click)="redirectToProject()">
   <div class="project-general-info">
     <img src="{{project.image}}" alt="project-img">
 <h4>{{project.name}}</h4>
+<ul>
+  <li *ngFor="let tech of project.usedTechs">{{tech}}</li>
+</ul>
   </div>
   <div class="project-details-info">
 <h4>Description:</h4>
+<p>{{project.description}}</p>
   </div>
 </div>

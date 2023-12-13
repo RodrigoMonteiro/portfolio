@@ -10,6 +10,7 @@ interface Project {
   name: string;
   image: string;
   usedTechs: string[];
+  urlProject: string;
   description: string;
 }
 
@@ -19,7 +20,6 @@ interface Project {
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-
   pokeListProject: Project;
   influencerHubProject: Project;
   rickMortyProject: Project;
