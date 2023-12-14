@@ -5,13 +5,14 @@ import { BtnThemeComponent } from './components/btn-theme/btn-theme.component';
 import { RouterModule } from '@angular/router';
 import { SkillBoxComponent } from './components/skill-box/skill-box.component';
 import { ProjectBoxComponent } from './components/project-box/project-box.component';
+import { EducationBoxComponent } from './components/education-box/education-box.component';
 
 
 
 
 
 @NgModule({
-  declarations: [NavbarComponent, BtnThemeComponent, SkillBoxComponent, ProjectBoxComponent],
+  declarations: [NavbarComponent, BtnThemeComponent, SkillBoxComponent, ProjectBoxComponent, EducationBoxComponent],
   imports: [CommonModule, RouterModule],
   exports: [NavbarComponent, BtnThemeComponent, SkillBoxComponent, ProjectBoxComponent],
 })

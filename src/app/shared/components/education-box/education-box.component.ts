@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
-interface EducationType {
-  firstLevelEducation: FirstEducation;
+
+interface EducationType{
+  firstLevelEducation : FirstEducation;
   secondLevelEducation: SecondEducation[];
 }
 
@@ -25,10 +26,10 @@ interface SecondEducation {
 }
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  selector: 'app-education-box',
+  templateUrl: './education-box.component.html',
+  styleUrls: ['./education-box.component.scss']
 })
-export class EducationComponent {
+export class EducationBoxComponent {
 
 }
