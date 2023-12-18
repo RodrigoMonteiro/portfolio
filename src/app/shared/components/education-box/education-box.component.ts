@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
-interface EducationType{
-  firstLevelEducation : FirstEducation;
-  secondLevelEducation: SecondEducation[];
+interface EducationType {
+  mainlyFormation: FirstEducation;
+  secondaryFormation: SecondaryEducation[];
 }
 
 interface FirstEducation {
   institute: string;
-  instituleLogo: string;
+  instituteLogo: string;
   course: string;
   courseTotalHours: number;
   startedAt: string;
@@ -16,7 +16,7 @@ interface FirstEducation {
   pathCourse: string;
 }
 
-interface SecondEducation {
+interface SecondaryEducation {
   courseName: string;
   totalHours: number;
   coveredTopics: string[];
@@ -28,8 +28,15 @@ interface SecondEducation {
 @Component({
   selector: 'app-education-box',
   templateUrl: './education-box.component.html',
-  styleUrls: ['./education-box.component.scss']
+  styleUrls: ['./education-box.component.scss'],
 })
 export class EducationBoxComponent {
+  @Input()
+  education!: EducationType;
+  isMainFormationOpen: boolean = false;
+
+  toggleMainFormation() {
+    this.isMainFormationOpen = !this.isMainFormationOpen;
+  }
 
 }

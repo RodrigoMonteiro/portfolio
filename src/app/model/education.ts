@@ -1,9 +1,9 @@
 export const education = {
-  mainlyFomation: {
+  mainlyFormation: {
     institute: 'Universidade Estadual da Paraíba',
-    instituleLogo: '',
+    instituteLogo: 'assets/img/education/uepb.png',
     course: 'Computer science',
-    courseTotalHours: 0,
+    courseTotalHours: 3570,
     startedAt: '10/02/2015',
     endedAt: '20/12/2022',
     pathCourse: 'https://departamentos.uepb.edu.br/comp-ccea/grade-curricular',

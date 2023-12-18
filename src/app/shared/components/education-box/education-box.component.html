@@ -1,1 +1,25 @@
-<p>education-box works!</p>
+<div class="education-box-container">
+  <div [class]="isMainFormationOpen ? 'education-container-open' : 'education-container-closed'">
+    <div class="education-general">
+      <img src="{{ education.mainlyFormation.instituteLogo }}" alt="logo_institute" />
+      <div class="icon" (click)="toggleMainFormation()">
+        <mat-icon>chevron_right</mat-icon>
+      </div>
+      <p><strong>Institute:</strong> {{ education.mainlyFormation.institute }}</p>
+    </div>
+    <div class="education-details">
+      <p><strong>Course: </strong> {{ education.mainlyFormation.course }}</p>
+      <p><strong>Total hours: </strong> {{ education.mainlyFormation.courseTotalHours }}</p>
+      <p><strong>Started at: </strong> {{ education.mainlyFormation.startedAt }}</p>
+      <p><strong>Ended at: </strong> {{ education.mainlyFormation.endedAt }}</p>
+      <p>
+        <strong>About course: </strong>
+        <a href="{{ education.mainlyFormation.pathCourse }}" target="_blank">Course structure <strong>here</strong>.</a>
+      </p>
+    </div>
+  </div>
+  <div class="education-second-container">
+    <div class="education-general-second"></div>
+    <div class="education-details-second"></div>
+  </div>
+</div>

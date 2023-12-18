@@ -9,6 +9,9 @@ import { SkillsComponent } from './views/skills/skills.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { EducationComponent } from './views/education/education.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 
 
@@ -27,6 +30,8 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     ThemeModule,
     SharedModule,
     NgxTypedJsModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

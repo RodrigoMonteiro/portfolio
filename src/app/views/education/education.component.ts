@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
+import { education } from 'src/app/model/education';
 
 interface EducationType {
-  firstLevelEducation: FirstEducation;
-  secondLevelEducation: SecondEducation[];
+  mainlyFormation: FirstEducation;
+  secondaryFormation: SecondaryEducation[];
 }
 
 interface FirstEducation {
+
   institute: string;
-  instituleLogo: string;
+  instituteLogo: string;
   course: string;
   courseTotalHours: number;
   startedAt: string;
@@ -15,7 +17,7 @@ interface FirstEducation {
   pathCourse: string;
 }
 
-interface SecondEducation {
+interface SecondaryEducation {
   courseName: string;
   totalHours: number;
   coveredTopics: string[];
@@ -31,4 +33,9 @@ interface SecondEducation {
 })
 export class EducationComponent {
 
+  myEducation: EducationType;
+
+  constructor(){
+    this.myEducation = education;
+  }
 }

@@ -1,6 +1,9 @@
 .education-container{
-  position: absolute;
-  height: 85%;
-  top: 15%;
+  position: relative;
+  height: 90%;
   padding: 25px;
+
+  .education-box{
+    height: 100%;
+  }
 }
