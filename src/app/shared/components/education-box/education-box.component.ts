@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 interface EducationType {
@@ -30,7 +30,10 @@ interface SecondaryEducation {
   templateUrl: './education-box.component.html',
   styleUrls: ['./education-box.component.scss'],
 })
-export class EducationBoxComponent {
+export class EducationBoxComponent implements OnInit{
+  ngOnInit(): void {
+   console.log(this.education)
+  }
   @Input()
   education!: EducationType;
   isMainFormationOpen: boolean = false;

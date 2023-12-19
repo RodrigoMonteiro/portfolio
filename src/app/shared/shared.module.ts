@@ -7,6 +7,7 @@ import { SkillBoxComponent } from './components/skill-box/skill-box.component';
 import { ProjectBoxComponent } from './components/project-box/project-box.component';
 import { EducationBoxComponent } from './components/education-box/education-box.component';
 import { MaterialModule } from './material/material/material.module';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 
@@ -21,7 +22,7 @@ import { MaterialModule } from './material/material/material.module';
     ProjectBoxComponent,
     EducationBoxComponent,
   ],
-  imports: [CommonModule, RouterModule, MaterialModule],
+  imports: [CommonModule, RouterModule, MaterialModule, NgxTypedJsModule],
   exports: [
     NavbarComponent,
     BtnThemeComponent,

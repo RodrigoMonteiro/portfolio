@@ -1,25 +1,77 @@
 <div class="education-box-container">
-  <div [class]="isMainFormationOpen ? 'education-container-open' : 'education-container-closed'">
+   <ngx-typed-js
+      [strings]="[
+        'Mainly formation'
+
+      ]"
+      [loop]="true"
+      [typeSpeed]="125"
+      [backSpeed]="75"
+      [showCursor]="true"
+    >
+      <h2 class="typing"></h2>
+    </ngx-typed-js>
+  <div class="education-container-open">
     <div class="education-general">
-      <img src="{{ education.mainlyFormation.instituteLogo }}" alt="logo_institute" />
-      <div class="icon" (click)="toggleMainFormation()">
-        <mat-icon>chevron_right</mat-icon>
-      </div>
-      <p><strong>Institute:</strong> {{ education.mainlyFormation.institute }}</p>
+      <img
+        src="{{ education.mainlyFormation.instituteLogo }}"
+        alt="logo_institute"
+      />
+
+      <p>
+        <strong>Institute:</strong> {{ education.mainlyFormation.institute }}
+      </p>
     </div>
     <div class="education-details">
       <p><strong>Course: </strong> {{ education.mainlyFormation.course }}</p>
-      <p><strong>Total hours: </strong> {{ education.mainlyFormation.courseTotalHours }}</p>
-      <p><strong>Started at: </strong> {{ education.mainlyFormation.startedAt }}</p>
+      <p>
+        <strong>Total hours: </strong>
+        {{ education.mainlyFormation.courseTotalHours }}
+      </p>
+      <p>
+        <strong>Started at: </strong> {{ education.mainlyFormation.startedAt }}
+      </p>
       <p><strong>Ended at: </strong> {{ education.mainlyFormation.endedAt }}</p>
       <p>
         <strong>About course: </strong>
-        <a href="{{ education.mainlyFormation.pathCourse }}" target="_blank">Course structure <strong>here</strong>.</a>
+        <a href="{{ education.mainlyFormation.pathCourse }}" target="_blank"
+          >Course structure <strong>here</strong>.</a
+        >
       </p>
     </div>
   </div>
+
+
+  <ngx-typed-js
+      [strings]="[
+        'Additional studies'
+
+      ]"
+      [loop]="true"
+      [typeSpeed]="125"
+      [backSpeed]="75"
+      [showCursor]="true"
+    >
+      <h2 class="typing"></h2>
+    </ngx-typed-js>
   <div class="education-second-container">
-    <div class="education-general-second"></div>
-    <div class="education-details-second"></div>
+    <ul>
+      <li *ngFor="let item of education.secondaryFormation">
+        <div class="education-general-second">
+          <img src="{{ item.courseImage }}" alt="logo_institute" />
+
+          <p><strong>Course: </strong> {{ item.courseName }}</p>
+        </div>
+        <div class="education-details-second">
+          <p><strong>Plataform: </strong> {{ item.plataform }}</p>
+          <p><strong>Total hours: </strong> {{ item.totalHours }}</p>
+          <p><strong>Topics: </strong> {{ item.coveredTopics }}</p>
+          <p>
+            <strong>Course: </strong>Course link
+            <strong> <a href="{{ item.courseUrl }}" target="_blank">here.</a></strong>
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
