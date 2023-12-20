@@ -84,6 +84,15 @@ h6{
   font-size: 1rem;
 }
 
-
-html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html ::-webkit-scrollbar {
+  width: 5px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--background-primary);
+}
+html ::-webkit-scrollbar-track {
+  background: var(--main-background);
+}

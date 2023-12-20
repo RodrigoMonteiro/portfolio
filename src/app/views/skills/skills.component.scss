@@ -3,10 +3,12 @@
   top: 5%;
   position: relative;
   display: flex;
-
   justify-content: space-around;
+
   .skill-box {
     width: 20%;
     height: 80%;
+    border: 1px solid transparent;
+    border-radius: 5px;
   }
 }

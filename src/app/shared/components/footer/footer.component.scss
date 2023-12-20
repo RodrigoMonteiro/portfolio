@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+  position: relative;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: var(--background-primary);
+
+  h4 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    margin-left: 2%;
+  }
+
+  .container-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    color: var(--font-color);
+    background-color: transparent;
+    a{
+      background-color: transparent;
+
+     img {
+      height: 32px;
+      width: 32px;
+      background-color: transparent;
+      transition: opacity 0.8s;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+   }
+  }
+}

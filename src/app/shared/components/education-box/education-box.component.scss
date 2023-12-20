@@ -9,6 +9,7 @@
   padding: 5px;
 
   h2 {
+    color: var(--background-secondary);
     text-decoration: underline;
      display: inline-block;
 
@@ -22,14 +23,11 @@
     display: flex;
     width: 82%;
     height: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
     transition: box-shadow 0.4s ease-in-out;
     border: 1px solid var(--background-secondary);
 
-    &:hover {
-      box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
-      opacity: 0.8;
-    }
+
 
     .education-general {
 

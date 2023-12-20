@@ -8,6 +8,7 @@ import { ProjectBoxComponent } from './components/project-box/project-box.compon
 import { EducationBoxComponent } from './components/education-box/education-box.component';
 import { MaterialModule } from './material/material/material.module';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -21,6 +22,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     SkillBoxComponent,
     ProjectBoxComponent,
     EducationBoxComponent,
+    FooterComponent,
   ],
   imports: [CommonModule, RouterModule, MaterialModule, NgxTypedJsModule],
   exports: [
@@ -29,6 +31,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     SkillBoxComponent,
     ProjectBoxComponent,
     EducationBoxComponent,
+    FooterComponent
   ],
 })
 export class SharedModule {}

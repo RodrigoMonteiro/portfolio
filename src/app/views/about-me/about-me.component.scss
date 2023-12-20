@@ -29,6 +29,7 @@
     }
 
     .about-me-btn-resume {
+     font-weight: bold;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -36,8 +37,8 @@
       top: 20%;
       color: var(--font-color);
       text-decoration: none;
-      right: -30%;
-      width: 20%;
+      right: -25%;
+      width: 25%;
       height: 40px;
       border: 1px solid var(--background-secondary);
       border-radius: 5px;
@@ -50,7 +51,11 @@
       &:hover {
         cursor: pointer;
         opacity: 0.8;
-        transform: translateY(-5px);
+        transform: translateY(-8px);
+        border:1px solid var(--background-primary);
+        background-color: transparent;
+        color: var(--background-secondary);
+
       }
     }
   }
