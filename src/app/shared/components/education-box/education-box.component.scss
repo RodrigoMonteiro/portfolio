@@ -3,34 +3,30 @@
   top: 25%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   padding: 5px;
-
   h2 {
     color: var(--background-secondary);
-    text-decoration: underline;
-     display: inline-block;
-
+    display: inline-block;
   }
 
   .education-container-open {
     position: relative;
     padding: 5px;
-    margin: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 5px;
     display: flex;
-    width: 82%;
+    width: 88%;
     height: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
-    transition: box-shadow 0.4s ease-in-out;
+    box-shadow: 0 0 10px rgba(60, 60, 155, 0.4);
     border: 1px solid var(--background-secondary);
-
-
+    background-color: var(--background-contrast);
 
     .education-general {
-
       padding: 5px;
       display: flex;
       flex-direction: column;
@@ -38,90 +34,127 @@
       align-items: center;
       flex-wrap: wrap;
       width: 50%;
-      transition: transform 0.7s linear;
+      background-color: var(--background-contrast);
 
       img {
         width: 15%;
-        height:auto ;
+        background-color: var(--background-contrast);
+        height: auto;
       }
 
       p {
         padding-top: 10px;
+        background-color: var(--background-contrast);
         text-align: center;
+
+        strong {
+          background-color: var(--background-contrast);
+        }
       }
     }
 
     .education-details {
+      background-color: var(--background-contrast);
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       padding: 5px;
       width: 45%;
-      a {
-        text-decoration: none;
+
+      p {
+        background-color: var(--background-contrast);
+
+        strong {
+          background-color: var(--background-contrast);
+        }
+
+        a {
+          background-color: var(--background-contrast);
+          text-decoration: none;
+        }
       }
     }
   }
 
   .education-second-container {
+    margin-top: 5%;
     top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
 
-    ul{
+    ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
       width: 90vw;
       // background-color: red;
-       li {
-      margin-top: 25px;
-      display: flex;
-      height: 35vh;
-      width:40%;
-    border-radius: 5px;
-     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
-    transition: box-shadow 0.4s ease-in-out, transform 0.4s;
-    border: 1px solid var(--background-secondary);
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        display: flex;
+        height: 35vh;
+        width: 45%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+        background-color: var(--background-contrast);
+        transition:
+          box-shadow 0.4s ease-in-out,
+          transform 0.4s;
+        border: 1px solid var(--background-secondary);
 
-    &:hover {
-      box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
-      transform: translateY(-5px);
-      opacity: 0.8;
-    }
+        &:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+          transform: translateY(-5px);
+          opacity: 0.8;
+        }
 
-      .education-general-second {
-        width: 60%;
-        height: 100%;
-        padding: 5px;
-        flex-wrap: wrap;
-        border-radius: 5px 0 0 5px;
+        .education-general-second {
+          background-color: var(--background-contrast);
+          width: 55%;
+          height: 100%;
+          padding: 5px;
+          flex-wrap: wrap;
+          border-radius: 5px 0 0 5px;
 
-        img {
-          width: 90%;
-          border-radius: 5px;
-          height: auto;
+          p {
+            strong {
+              background-color: var(--background-contrast);
+            }
+          }
+
+          img {
+            width: 90%;
+            border-radius: 5px;
+            height: auto;
+          }
+        }
+        .education-details-second {
+          display: flex;
+          padding: 5px;
+          flex-direction: column;
+          flex-wrap: wrap;
+          word-break: break-all;
+          border-radius: 0 5px 5px 0;
+          justify-content: space-around;
+          background-color: var(--background-contrast);
+          width: 45%;
+
+          p {
+            strong {
+              background-color: var(--background-contrast);
+            }
+          }
+
+          a {
+            background-color: var(--background-contrast);
+            text-decoration: none;
+          }
         }
       }
-      .education-details-second{
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        word-break: break-all;
-        border-radius: 0 5px 5px 0;
-        justify-content: space-evenly;
-        width: 45%;
-
-        a {
-          text-decoration: none;
-        }
-    }
-  }
     }
   }
 }

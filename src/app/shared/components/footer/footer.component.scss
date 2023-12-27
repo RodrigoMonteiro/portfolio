@@ -8,6 +8,17 @@
   width: 100%;
   background-color: var(--background-primary);
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(2px);
+  }
+
   h4 {
     display: flex;
     align-items: center;
@@ -24,19 +35,19 @@
     height: 100%;
     color: var(--font-color);
     background-color: transparent;
-    a{
+    a {
       background-color: transparent;
 
-     img {
-      height: 32px;
-      width: 32px;
-      background-color: transparent;
-      transition: opacity 0.8s;
-      &:hover{
-        cursor: pointer;
-        opacity: 0.8;
+      img {
+        height: 24px;
+        width: 24px;
+        background-color: transparent;
+        transition: opacity 0.8s;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
       }
     }
-   }
   }
 }

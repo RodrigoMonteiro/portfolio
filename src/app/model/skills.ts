@@ -7,7 +7,7 @@ export const frontendSkills = {
     {name: 'React', icon: 'assets/img/skills/react.png'},
     {name: 'Angular', icon: 'assets/img/skills/angular.png'},
     {name: 'Boostrap', icon: 'assets/img/skills/bootstrap.png'},
-    {name: 'Tailwind', icon: 'assets/img/skills/tailwind.png'}
+    {name: 'Next', icon: 'assets/img/skills/next.png'}
   ]
 
 }
@@ -20,6 +20,7 @@ export const backendSkills = {
     {name: 'MongoDB', icon: 'assets/img/skills/mongo.png'},
     {name: 'Spring', icon: 'assets/img/skills/spring.png'},
     {name: 'Postgres', icon: 'assets/img/skills/postgres.png'},
+    {name: 'Firebase', icon: 'assets/img/skills/firebase.png'},
   ]
 
 }
@@ -44,7 +45,6 @@ export const generalSkills = {
     { name: 'Git', icon: 'assets/img/skills/git.png' },
     { name: 'VS code', icon: 'assets/img/skills/vscode.png' },
     { name: 'Figma', icon: 'assets/img/skills/figma.png' },
-    { name: 'Postman', icon: 'assets/img/skills/postman.png' },
     { name: 'Heroku', icon: 'assets/img/skills/heroku.png' },
   ],
 };

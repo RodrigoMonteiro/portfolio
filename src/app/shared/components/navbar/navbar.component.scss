@@ -11,22 +11,33 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   padding: 20px;
 
-  h1 {
+  .logo-container {
+    width: 21%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--background-primary);
+
+    img {
+      background-color: var(--background-primary);
+      margin-right: 5px;
+      color: var(--font-color);
+      width: 42px;
+      height: 42px;
+    }
   }
 
   .navbar-btns-container {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    align-self: center;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     width: 40%;
     height: 100%;
     background-color: transparent;
 
-    .btn,
-    .btn-switch-theme {
+    .btn {
       position: relative;
       background-color: transparent;
       transition:
@@ -43,11 +54,23 @@
         cursor: pointer;
         opacity: 0.8;
         transform: translateY(-5px);
+        // text-decoration: underline;
+
+        &:after{
+          content:"";
+          position:absolute;
+          width: 85%;
+          height: 2px;
+          bottom:-1px;
+          right: 50%;
+          transform: translateX(50%);
+          border-radius: 5px;
+          background-color: var(--font-color);
+        }
       }
     }
-    .btn-theme {
-      position: relative;
-      left: 0;
-    }
+  }
+  .btn-theme {
+    height: 28px;
   }
 }
